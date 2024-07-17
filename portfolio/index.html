@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shantanu-developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+
+    }
+    body{
+      background-color: rgb(1, 1, 55);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: rgb(8, 8, 117);
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li{
+      display: flex;
+      margin: 0 23px;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover{
+      color: rgb(132, 132, 237);
+      font-size: 1.1rem;
+     
+    }
+    .left{
+      font-size: 1.5rem;
+    }
+    .firstSection{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 23px 0;
+    }
+
+    .firstSection >div{
+      width: 30%;
+    }
+
+   .leftSection{
+    
+    font-size: 2rem;
+   }
+   .leftSection .button{
+    padding: 50px 0;
+    
+   }
+
+   .leftSection .btn{
+    padding: 12px;
+    background-color: rgb(121, 62, 176);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+   }
+
+
+   .rightSection{
+   
+    font-size: 2rem;
+   }
+
+   .purple{
+    color:rgb(161, 81, 236);
+
+   }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Shantanu's- portfolio </div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Social media</a></li>
+          <li><a href="/">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi myself <span class="purple">Shantanu</span> !
+        <div>Welcome to my portfolio</div>
+        <span id="element"></span>
+        <div class="button">
+          <a href="./resume.jpg"><button class="btn">Download Resume </button></a>
+          <button class="btn">View Github</button>
+        </div>
+      </div>
+
+      <div class="rightSection">
+        <img src="dev.png" alt="">
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web developer', 'Web designer'],
+        typeSpeed: 50,
+      });
+    </script>
+</body>
+</html>
